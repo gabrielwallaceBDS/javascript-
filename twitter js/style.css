@@ -1,0 +1,14 @@
+.textarea{
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    border-radius: 4px;
+}
+p{
+    font-family: arial;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+} 

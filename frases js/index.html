@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Frases</title>
+</head>
+<body>
+<div class="container">
+    <button id="btn">NOVA FRASE</button>
+</div>
+<div id="quote">Veja aqui sua frase!</div>
+</body>
+<script>
+    
+    let btn = document.getElementById("btn");
+    let output= document.getElementById("quote");
+
+    let quotes=[
+    "“É genial festejar o sucesso, mas é mais importante aprender com as lições do fracasso”.",
+    "“A vida não é justa… Acostume-se a isso”.",
+    "“A inovação é o verdadeiro motor do progresso”.",
+    "Quando você quer alguma coisa, todo o universo conspira para que você realize o seu desejo.",
+    "“A única pessoa livre é aquela que não tem medo do ridículo”.",
+    "“Os limites do possível só podem ser definidos indo além do impossível”.",
+    "“Daqui a vinte anos, você estará mais desapontado com as coisas que você não fez do que com aquelas que você fez, então desatraque e navegue para longe do porto seguro, aproveite os ventos da troca em seu caminho. Explore, sonhe, descubra”.",
+    "“Até cortar os próprios defeitos pode ser perigoso. Nunca se sabe qual é o defeito que sustenta nosso edifício inteiro”.",
+    "“Você deve pensar grande e começar pequeno”.",
+
+    ];
+
+    btn.addEventListener('click',function(){
+        var quote= quotes[Math.floor(Math.random()*quotes.length)];
+        output.innerHTML = quote;
+    })
+
+</script>
+</html>

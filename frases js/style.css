@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn{
+    height: 40px;
+    width: 200px;
+    background-color: #34a1eb;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+
+#quote{
+    text-align: center;
+    margin-top: 30px;
+    color: #34a1eb;
+}

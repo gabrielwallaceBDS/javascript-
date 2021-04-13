@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    const name="gabriel wallace";
+    let index= 0;
+    function autotext(){
+        document.body.innerText = name.slice(0,index);
+        index++;
+        if(index>name.length){
+            index = 0;
+        }
+    }
+
+    setInterval(autotext,1000);
+
+
+
+
+
+
+
+    //document
+    //slice
+    //var str = "gabriel";
+    //console.log(str.slice(0,2));//ga
+    //setInterval
+    //setInterval(callback,delay)
+    //setInterval(function(){alert("gabriel")},5000);
+
+
+</script>
+</html>

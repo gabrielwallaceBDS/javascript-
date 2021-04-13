@@ -1,0 +1,25 @@
+.age {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="date"] {
+    border-radius: 5px;
+    height: 20px;
+    border-color: green;
+    outline-color: green;
+}
+input[type="submit"]{
+    border-radius: 5px;
+    height: 25px;
+    border-color: green;
+    outline-color: green;
+    color: white;
+    background-color: green;
+}
+
+p {
+    text-align: center;
+    color: green;
+}

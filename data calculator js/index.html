@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="age">
+        <input type="date" id="dob">
+        <input type="submit" value="Calculate Age" onclick="calAge()">
+    </div>
+    <p id="demo"></p>
+
+</body>
+<script>
+
+    function calAge(){
+    var inputage = document.getElementById("dob").value;
+    var ud = Date.parse(inputage);
+    var nd = Date.now();
+    
+    var agemilli = nd - ud;
+
+    var minutes = 1000*60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days *365;
+
+    var yy = Math.round(agemilli/years);
+    var month = yy*12;
+    var day = yy*365;
+    var hour = Math.round(agemilli/hours);
+
+
+    document.getElementById("demo").innerHTML = "Age in years:::"+yy+"<br/>Age in month:::" +month+"<br/>Age in days:::"+day+"<br/>age in hours:::"+hour;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* //date
+    var a = new Date();
+    console.log(a);
+
+    //todays
+    var cd = new Date();
+    var yy = cd.getFullYear();//2021
+    var mm = cd.getMonth()+1;//0 TO 11
+    var dd = cd.getDate();//1 TO 31
+    console.log(dd+'/'+mm+'/'+yy);
+
+    // jan 1st 1970 to the date
+    var nd = Date.parse("October 8 2020");
+    console.log(nd);
+
+   /* var t = Date.now();
+    console.log(t);
+
+    var minutes = 1000*60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days *365;
+    var yy = Math.round(nd/years);
+    console.log(yy);*/
+
+</script>
+</html>

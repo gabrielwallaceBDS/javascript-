@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="mobile" placeholder="Enter Mobile number">
+        <input type="button" value="check" onclick="mobileNumber()">
+
+    </form>
+    <p id="message"></p>
+</body>
+<script>
+    function mobileNumber() {
+        var num = document.getElementById("mobile").value;
+        var indnum = /(((\+){1}91){1})?-?[9876]{1}[0-9]{9}/gm;
+        if(indnum.test(num)){
+            document.getElementById('message').innerHTML="Valid Number";
+            
+        }else {
+            document.getElementById('message').innerHTML="Not a valid Number";
+            document.getElementById('mobile').focus();
+        }
+    }
+</script>
+</html>

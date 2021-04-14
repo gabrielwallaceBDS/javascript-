@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="name" placeholder="Enter name">
+        <input type="email" id="email" placeholder="Enter email">
+        <input type="button" value="submit" onclick="localStor()"> 
+    </form>
+    
+</body>
+<script>
+
+    function localStor() {
+        var a = document.getElementById("name").value;
+        var b = document.getElementById("email").value;
+
+        console.log(a);
+        console.log(b);
+
+        if(typeof(Storage)!==undefined) {
+            localStorage.setItem('name',a);
+            localStorage.setItem('email',b);
+        }else {
+            alert("LS not supports");
+        }
+        alert(localStorage.email);
+        delete localStorage.email;
+
+        localStorage.clear();
+    }
+</script>
+</html>

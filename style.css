@@ -1,0 +1,27 @@
+body{
+    background-color: #1d6;
+}
+button{
+    color: aqua;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: initial;
+    border: 3px solid #4D4D4F;
+    margin: auto;
+    text-align: center;
+    color: aqua;
+}
+button{
+    width:120px;
+    height:30px;
+    background: #FFCC33; /* amarelo */
+    border:  solid #00537C; /* borda branca em volta */
+    margin: auto; /* centraliza com bordas automáticas nas laterais */
+    text-align: center; /* centraliza o texto */
+    padding: 6px 0px 6px 0px; /* espaços top right bottom left */
+    font-family: Source Sans Pro; /* fonte */
+    font-size: 16px;  /* tamanho da fonte */
+    color: #4D4D4F; /* cor fonte */ 
+}

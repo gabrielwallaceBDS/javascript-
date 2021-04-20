@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRcode</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form>
+        <div>
+            <input type="text" id="input" placeholder="Enter Something"></div>
+            <input type="button" id="generate" value="Generate QR code"  onclick="qrgenerate()"></div>
+    </form>
+    <div id="qr"></div>
+</body>
+<script src="js/qrcode.min.js"></script>
+<script>
+    function qrgenerate() {
+        var userinput = document.getElementById("input").value;
+        document.getElementById("qr").innerHTML="";
+
+        new QRCode(document.getElementById("qr"),userinput);
+    }
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  </body> 
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA49hvIMKlsfCZvfuLKLgzMAR9Nvpfrck&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+        let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat:  -25.3679, lng:-49.2789
+  },
+    zoom: 10 ,
+/*
+1: World
+5: Landmass/continent
+10: City
+15: Streets
+20: Buildings,
+ PODE COLOCAR QUALQUER NUMERO ENTRE 1 E 20*/
+ mapTypeId:"terrain"
+  });
+
+  new google.maps.Marker({
+ position:  { lat:  -25.3679, lng:-49.2789
+},
+ map:map,
+ label:"",
+ title:"bhongir",
+ draggable:false,
+ animation:google.maps.Animation.DROP
+  })
+}
+    </script>
+</html>

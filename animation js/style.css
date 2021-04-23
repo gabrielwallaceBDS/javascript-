@@ -1,0 +1,18 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+}
+
+.Gabriel{
+    position: fixed;
+    bottom: 0vh;
+    color: red;
+    font-size: 2rem;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {top: 0; transform: translateY(-200vh);}
+}
